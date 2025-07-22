@@ -58,7 +58,6 @@ const Home = () => {
     setIsOpen(false);
   };
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handler = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -76,7 +75,7 @@ const Home = () => {
 
   return (
     <section>
-      <div className="bg-light-Bg text-light dark:bg-dark-Bg dark:text-dark flex flex-col items-center justify-between gap-4 p-8 md:flex-row">
+      <div className="bg-light-Bg text-light dark:bg-dark-Bg dark:text-dark flex flex-col items-center justify-between gap-4 p-10 md:flex-row">
         <div className="w-full md:w-auto">
           <label className="relative block w-full">
             <span className="absolute inset-y-0 left-0 flex items-center pl-5">
